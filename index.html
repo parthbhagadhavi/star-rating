@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div id="RatingBox">
+
+        <div id="first">
+            <img src="./img/star.svg" alt="img" height="25px" width="25px">
+        </div>
+        <div id="second">
+            <img src="./img/star.svg" alt="img" height="25px" width="25px">
+        </div>
+        <div id="third">
+            <img src="./img/star.svg" alt="img" height="25px" width="25px">
+        </div>
+        <div id="four">
+            <img src="./img/star.svg" alt="img" height="25px" width="25px">
+        </div>
+        <div id="five">
+            <img src="./img/star.svg" alt="img" height="25px" width="25px">
+        </div>
+
+
+        <p class="ratingprint" style="background: #3c3d37b9; color: white;padding: 5px;">0</p>
+
+    </div>
+
+    <script>
+
+
+     
+        let paragraph = document.querySelector('.ratingprint');
+
+        let halffirstrate = document.getElementById('first').querySelector('img');
+        halffirstrate.addEventListener('click', () => {
+            halffirstrate.src = "./img/star-half.svg";
+            secondrate.src = "./img/star.svg";
+            thirdrate.src = "./img/star.svg";
+            fourrate.src = "./img/star.svg";
+            fiverate.src = "./img/star.svg";
+
+
+            function updatevalue(number) {
+                if (number <= 1) {
+                    return number;
+
+
+                }
+
+            }
+            let updatefirst = updatevalue(0.5)
+            paragraph.textContent = updatefirst;
+
+            console.log(updatefirst);
+        
+
+
+        });
+
+
+        let halfsecondrate = document.getElementById('second').querySelector('img');
+        halfsecondrate.addEventListener('click', () => {
+            firstrate.src = "./img/star-fill.svg";
+            halfsecondrate.src = "./img/star-half.svg";
+
+            thirdrate.src = "./img/star.svg";
+            fourrate.src = "./img/star.svg";
+            fiverate.src = "./img/star.svg";
+
+            function updatevalue(number) {
+                if (number <= 2) {
+                    return number;
+
+
+                }
+
+            }
+            let updatefirst = updatevalue(1.5)
+            paragraph.textContent = updatefirst;
+
+         
+
+        });
+        let halfthirdrate = document.getElementById('third').querySelector('img');
+        halfthirdrate.addEventListener('click', () => {
+            firstrate.src = "./img/star-fill.svg";
+            secondrate.src = "./img/star-fill.svg";
+            halfthirdrate.src = "./img/star-half.svg";
+
+
+
+            fourrate.src = "./img/star.svg";
+            fiverate.src = "./img/star.svg";
+
+            function updatevalue(number) {
+                if (number <= 3) {
+                    return number;
+
+
+                }
+
+            }
+            let updatefirst = updatevalue(2.5)
+            paragraph.textContent = updatefirst;
+
+          
+
+        });
+
+        let halffourrate = document.getElementById('four').querySelector('img');
+        halffourrate.addEventListener('click', () => {
+            firstrate.src = "./img/star-fill.svg";
+            secondrate.src = "./img/star-fill.svg";
+            thirdrate.src = "./img/star-fill.svg";
+            halffourrate.src = "./img/star-half.svg";
+
+
+
+            fiverate.src = "./img/star.svg";
+
+            function updatevalue(number) {
+                if (number <= 4) {
+                    return number;
+
+
+                }
+
+            }
+            let updatefirst = updatevalue(3.5)
+            paragraph.textContent = updatefirst;
+
+       
+
+        });
+
+        let halffiverate = document.getElementById('five').querySelector('img');
+        halffiverate.addEventListener('click', () => {
+            firstrate.src = "./img/star-fill.svg";
+            secondrate.src = "./img/star-fill.svg";
+            thirdrate.src = "./img/star-fill.svg";
+            fourrate.src = "./img/star-fill.svg";
+
+
+
+            halffiverate.src = "./img/star-half.svg";
+            function updatevalue(number) {
+                if (number <= 5) {
+                    return number;
+
+
+                }
+
+            }
+            let updatefirst = updatevalue(4.5)
+            paragraph.textContent = updatefirst;
+
+        
+
+        });
+
+
+
+
+        let firstrate = document.getElementById('first').querySelector('img');
+        firstrate.addEventListener('dblclick', () => {
+            firstrate.src = "./img/star-fill.svg";
+         
+            function updatevalue(number) {
+                if (number <= 1) {
+                    return number;
+
+
+                }
+
+            }
+            let updatefirst = updatevalue(1)
+            paragraph.textContent = updatefirst;
+
+
+        });
+
+        let secondrate = document.getElementById('second').querySelector('img');
+        secondrate.addEventListener('dblclick', () => {
+            firstrate.src = "./img/star-fill.svg";
+            secondrate.src = "./img/star-fill.svg";
+       
+            function updatevalue(number) {
+                if (number <= 2) {
+                    return number;
+
+
+                }
+
+            }
+            let updatefirst = updatevalue(2)
+            paragraph.textContent = updatefirst;
+
+        })
+
+
+        let thirdrate = document.getElementById('third').querySelector('img');
+        thirdrate.addEventListener('dblclick', () => {
+            firstrate.src = "./img/star-fill.svg";
+            secondrate.src = "./img/star-fill.svg";
+            thirdrate.src = "./img/star-fill.svg";
+
+        
+
+            function updatevalue(number) {
+                if (number <= 3) {
+                    return number;
+
+
+                }
+
+            }
+            let updatefirst = updatevalue(3)
+            paragraph.textContent = updatefirst;
+
+        })
+
+        let fourrate = document.getElementById('four').querySelector('img');
+        fourrate.addEventListener('dblclick', () => {
+            firstrate.src = "./img/star-fill.svg";
+            secondrate.src = "./img/star-fill.svg";
+            thirdrate.src = "./img/star-fill.svg";
+            fourrate.src = "./img/star-fill.svg";
+
+ 
+
+            function updatevalue(number) {
+                if (number <= 4) {
+                    return number;
+
+
+                }
+
+            }
+            let updatefirst = updatevalue(4)
+            paragraph.textContent = updatefirst;
+
+        })
+
+        let fiverate = document.getElementById('five').querySelector('img');
+        fiverate.addEventListener('dblclick', () => {
+            firstrate.src = "./img/star-fill.svg";
+            secondrate.src = "./img/star-fill.svg";
+            thirdrate.src = "./img/star-fill.svg";
+            fourrate.src = "./img/star-fill.svg";
+            fiverate.src = "./img/star-fill.svg";
+
+        
+            function updatevalue(number) {
+                if (number <= 5) {
+                    return number;
+
+
+                }
+
+            }
+            let updatefirst = updatevalue(5)
+            paragraph.textContent = updatefirst;
+
+        })
+    </script>
+
+
+
+
+
+
+
+    <!-- <div id="RatingBox">
+
+        <div onclick="ratingScore(1)">
+            <img data-rat="1" class="Star" onclick="ratingScore()" src="/img/star.svg" alt="img" height="35px" width="35px">
+        </div>
+        <div onclick="ratingScore(2)">
+            <img data-rat="2" class="Star" src="/img/star.svg" alt="img" height="35px" width="35px">
+        </div>
+        <div onclick="ratingScore(3)">
+            <img data-rat="3" class="Star" src="/img/star.svg" alt="img" height="35px" width="35px">
+        </div>
+        <div onclick="ratingScore(4)">
+            <img data-rat="4" class="Star" src="/img/star.svg" alt="img" height="35px" width="35px">
+        </div>
+        <div onclick="ratingScore(5)">
+            <img data-rat="5" class="Star" src="/img/star.svg" alt="img" height="35px" width="35px">
+        </div>
+
+    </div>
+
+    <script>
+
+        let star = document.querySelectorAll(".Star");
+        let sttriValueStar;
+        
+        function ratingScore(n) {
+            let index = n;
+            let star = document.querySelectorAll(".Star");
+            let RstingAmount = star[index].getAttribute("data-rat");
+            console.log(RstingAmount)
+            
+        }
+        
+        star.forEach((value) => {
+            
+            sttriValueStar = value.getAttribute("data-rat");
+            
+        })
+
+    </script> -->
+
+</body>
+
+</html>
